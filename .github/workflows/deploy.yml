@@ -31,6 +31,7 @@ jobs:
         run: |
           cd dist
           touch .nojekyll
+          cp index.html 404.html
           git init -q -b gh-pages
           git add -A
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
